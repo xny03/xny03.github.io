@@ -1,1 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+:root{
+    --cus-primary : #C0AE9E;
+    --cus-secondary : #AC947C;
+    --cus-frame : #D3C7BC;
+    --cus-background : #E7E0D8;
+    --cus-offcanvas : #A1886C;
+    --cus-font-1 : #452726;
+    --cus-font-2 : #171717;
+}
 
+footer.py-4 {
+    padding-bottom: 60px !important;
+}
+.card-hover:hover{
+    -webkit-box-shadow: 0 0.35em 1.175em rgba(2, 8, 20, 0.1), 0 0.175em 0.5em rgba(2, 8, 20, 0.08);
+    box-shadow: 0 0.35em 1.175em rgba(2, 8, 20, 0.1), 0 0.175em 0.5em rgba(2, 8, 20, 0.08);
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+.icon-notif-badge {
+    position: absolute;
+    left: 90% !important;
+    top: 10px !important;
+}
+.icon-notif-post {
+    position: absolute;
+    left: 80% !important;
+    top: 20px !important;
+    text-shadow: -1px 0px 2px var(--cus-font-1);
+}
+.icon-notif-post i {
+    font-size: 14px !important;
+}
+.btn {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+body {
+    font-family: "Noto Serif TC", serif !important;
+    font-weight: 600 !important;
+    color: #171717 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-size: 14px !important;
+}
+.card-body {
+    color: #171717 !important;
+}
+main.cus-container {
+    flex-grow: 1 !important;  
+    display: flex;
+    flex-direction: column;
+}
+.cus-container {
+    min-width: 300px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.cus-main {
+    margin-top: -10px !important;
+    flex-grow: 1 !important;
+}
+.cus-cover {
+    position: relative;
+    z-index: -1 !important;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.cus-icon {
+    font-size: 20px !important;
+}
+.cus-like.active{
+  animation:like 0.5s linear 1;
+  color:#ef4444 !important;
+}
+.gixiss {
+    display: inline-block;
+    border: 2px solid var(--cus-font-1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+.cus-badge-tag {
+    color: var(--cus-font-1) !important;
+    background-color: var(--cus-frame) !important;
+    font-weight: 900 !important;
+    font-size: 11px !important;
+}
+.cus-badge-tag:before {
+    content: "#";
+}
+.cus-post-collection{
+    background-color: var(--cus-font-1);
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 11px !important;
+}
+.cus-post-author-avatar {
+    width: 25px !important;
+    height: 25px !important;
+    min-width: 25px !important;
+    min-height: 25px !important;
+}
+.cus-author-avatar {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+}
+.cus-pd-author-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
+}
+.cus-comment-avatar {
+    width: 35px !important;
+    height: 35px !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+}
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+@keyframes like {
+    0%   { transform: scale(1) rotate(5deg); }
+    25% { transform: rotate(-6deg); } 
+    50% { transform: scale(1.3) rotate(5deg); } 
+    75% { transform: rotate(-6deg); } 
+    100% { transform: scale(1) rotate(5deg); } 
+}
+.pagination li a.page-link {
+    background-color: var(--cus-background) !important;
+    color:var(--cus-font-1) !important;
+    font-weight: 800 !important;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.075);
+    border: none;
+    padding: 8px 16px;
+    font-size: 20px !important;
+}
+.pagination li a.page-link:hover {
+    background-color: var(--cus-font-1) !important;
+    color: #FFFFFF !important;
+}
+.pagination .page-item:first-child .page-link {
+    border-top-left-radius: var(--bs-border-radius-xl);
+    border-bottom-left-radius: var(--bs-border-radius-xl);
+}
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: var(--bs-border-radius-xl);
+    border-bottom-right-radius: var(--bs-border-radius-xl);
+}
+.cus-post-comment {
+    border-top: 1px solid var(--cus-frame) !important;
+}
+
+
+.bg-cus-primary {
+    background-color: var(--cus-primary) !important;
+}
+.bg-cus-secondary {
+    background-color: var(--cus-secondary) !important;
+}
+.bg-cus-frame {
+    background-color: var(--cus-frame) !important;
+}
+.border-cus-frame {
+    border-color: var(--cus-frame) !important;
+}
+.bg-cus-background {
+    background-color: var(--cus-background) !important;
+}
+.bg-cus-offcanvas {
+    background-color: var(--cus-offcanvas) !important;
+}
+.bg-cus-1 {
+    background-color: var(--cus-font-1) !important;
+}
+.bg-cus-2 {
+    background-color: var(--cus-font-2) !important;
+}
+.color-cus-1 {
+    color: var(--cus-font-1) !important;
+}
+.color-cus-2 {
+    color: var(--cus-font-2) !important;
+}
+.btn-cus-1 {
+    background-color: var(--cus-font-1);
+    color: #FFFFFF;
+}
+.border-cus-1 {
+    border-color: var(--cus-font-1) !important;
+}
+.border-cus-2 {
+    border-color: var(--cus-font-2) !important;
+}
+.btn-cus-1:hover {
+    background-color: var(--cus-background);
+    border-color: var(--cus-font-1);
+    color: var(--cus-font-1);
+}
+
+.font-10 {
+    font-size: 10px !important;
+}
+.font-12 {
+    font-size: 12px !important;
+}
+.font-14 {
+    font-size: 14px !important;
+}
+.font-16 {
+    font-size: 16px !important;
+}
+.font-18 {
+    font-size: 18px !important;
+}
+.font-20 {
+    font-size: 20px !important;
+}
+.font-22 {
+    font-size: 22px !important;
+}
+.font-24 {
+    font-size: 24px !important;
+}
+.font-26 {
+    font-size: 26px !important;
+}
+.font-28 {
+    font-size: 28px !important;
+}
+.font-36 {
+    font-size: 36px !important;
+}
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+#myTab > li.nav-item > .nav-link {
+    border-radius: 16px !important;
+    padding: 8px 20px !important;
+    background-color: var(--cus-frame);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--cus-font-1);
+    border: none;
+}
+#myTab > li.nav-item > .nav-link.active {
+    border: none;
+    background-color: var(--cus-font-1);
+    color: #FFFFFF;
+}
