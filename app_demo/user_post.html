@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#C0AE9E" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-utilities.min.css">
+    
+    <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/colors.css">
+</head>
+<body class="bg-cus-background min-vh-100 position-relative">    
+
+    <header>
+        <div class="navbar navbar-dark bg-cus-primary shadow-sm z-3">
+            <div class="cus-container container w-100 position-relative text-start justify-content-start justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                <a href="index.html" class="navbar-brand m-0 p-0">
+                    <strong class="fs-3">36CP</strong>
+                </a>
+                <div class="position-absolute end-0 me-3 d-flex justify-content-end align-items-center">
+                    <a href="#" class="text-center position-relative align-middle font-24 ms-4"><i class="fa-solid fa-heart color-cus-1"></i></a>
+                    <a href="#" class="text-center align-middle position-relative font-24 ms-4"><i class="fa-solid fa-bell color-cus-1"></i>
+                        <span class="icon-notif-badge translate-middle p-1 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </a>
+                    <a href="profile.html" id="avatar" class="gixiss me-3 ms-4" style="width: 32px;height: 32px;"></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav_offcanvas" aria-controls="nav_offcanvas" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end border-0 shadow bg-cus-offcanvas" tabindex="-1" id="nav_offcanvas" aria-labelledby="nav_offcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="nav_offcanvas">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="card border-cus-frame shadow-sm rounded bg-cus-background mb-3">
+                            <div class="px-3 mt-2">
+                                <h4 class="fst-italic">Recent posts</h4>
+                                <ul class="list-unstyled m-0">
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Example blog post title</h6>
+                                        <small class="text-body-secondary">January 15, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">This is another blog post title</h6>
+                                        <small class="text-body-secondary">January 14, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                                        <small class="text-body-secondary">January 13, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-cus-1 fw-600" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cus-container w-100">
+        <section class="mb-3 ps-3">
+            <div class="d-flex flex-column justify-content-center align-items-center mt-5 my-4 gap-2">
+                <span style="width: 80px; height: 80px;" class="gixiss avatar me-1 rounded-circle"></span>
+                <h6 class="m-0 color-cus-1">一二三四五六七八九十一二三四五</h6>
+                
+                <div class="font-12 text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus ornare blandit.
+                </div>
+            </div>
+        </section>
+        <div class="w-100 px-3 d-grid">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="user_post.html" type="button" style="border:0 ;border-bottom: 4px solid white;" class="btn rounded-1 btn-lg bg-transparent color-cus-1">Post <span class="badge bg-cus-1 text-white">1</span></a>
+                <a href="user_post_collection.html" type="button" style="border:0 ;" class="btn rounded-1 btn-lg bg-transparent color-cus-1">Collections <span class="badge bg-cus-1 text-white">2</span></a>
+              </div>
+        </div>
+        <section class="cus-container container bg-cus-frame  w-100 rounded-top-4 shadow cus-main pt-3 pb-5 h-100" style="margin-top: -4px !important;">
+            
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3 mt-2">
+                    <div class="col">
+                        <div class="card card-hover shadow-sm bg-cus-background border-cus-frame h-100">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-body flex-grow-1 text-decoration-none">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </a>
+                                <div class="card-footer d-flex justify-content-between align-items-center border-top border-cus-frame">
+                                    <div class="d-flex align-items-center">
+                                        <label class="checkbox-like me-3 d-flex align-items-center" style="cursor: pointer;">
+                                            <input type="checkbox" class="check-like" hidden value="1">
+                                            <i class="fa-solid font-15 fa-heart cus-icon cus-like color-cus-1"></i>&nbsp;<small>12</small>
+                                        </label>
+                                        <span class="d-flex align-items-center"><i class="fa-solid fa-comment cus-icon color-cus-1"></i>&nbsp;<small>12</small></span>
+                                    </div>
+                                    <small class="text-body-secondary">2024-01-01</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover shadow-sm bg-cus-background border-cus-frame h-100">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-body flex-grow-1 text-decoration-none">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </a>
+                                <div class="card-footer d-flex justify-content-between align-items-center border-top border-cus-frame">
+                                    <div class="d-flex align-items-center">
+                                        <label class="checkbox-like me-3 d-flex align-items-center" style="cursor: pointer;">
+                                            <input type="checkbox" class="check-like" hidden value="1">
+                                            <i class="fa-solid font-15 fa-heart cus-icon cus-like color-cus-1"></i>&nbsp;<small>12</small>
+                                        </label>
+                                        <span class="d-flex align-items-center"><i class="fa-solid fa-comment cus-icon color-cus-1"></i>&nbsp;<small>12</small></span>
+                                    </div>
+                                    <small class="text-body-secondary">2024-01-01</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover shadow-sm bg-cus-background border-cus-frame h-100">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-body flex-grow-1 text-decoration-none">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </a>
+                                <div class="card-footer d-flex justify-content-between align-items-center border-top border-cus-frame">
+                                    <div class="d-flex align-items-center">
+                                        <label class="checkbox-like me-3 d-flex align-items-center" style="cursor: pointer;">
+                                            <input type="checkbox" class="check-like" hidden value="1">
+                                            <i class="fa-solid font-15 fa-heart cus-icon cus-like color-cus-1"></i>&nbsp;<small class="font-12">12</small>
+                                        </label>
+                                        <span class="d-flex align-items-center"><i class="fa-solid fa-comment cus-icon color-cus-1"></i>&nbsp;<small class="font-12">12</small></span>
+                                    </div>
+                                    <small class="text-body-secondary">2024-01-01</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover shadow-sm bg-cus-background border-cus-frame h-100">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-body flex-grow-1 text-decoration-none">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </a>
+                                <div class="card-footer d-flex justify-content-between align-items-center border-top border-cus-frame">
+                                    <div class="d-flex align-items-center">
+                                        <label class="checkbox-like me-3 d-flex align-items-center" style="cursor: pointer;">
+                                            <input type="checkbox" class="check-like" hidden value="1">
+                                            <i class="fa-solid font-15 fa-heart cus-icon cus-like color-cus-1"></i>&nbsp;<small class="font-12">12</small>
+                                        </label>
+                                        <span class="d-flex align-items-center"><i class="fa-solid fa-comment cus-icon color-cus-1"></i>&nbsp;<small class="font-12">12</small></span>
+                                    </div>
+                                    <small class="text-body-secondary">2024-01-01</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover shadow-sm bg-cus-background border-cus-frame h-100">
+                            <div class="d-flex flex-column">
+                                <a href="#" class="card-body flex-grow-1 text-decoration-none">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </a>
+                                <div class="card-footer d-flex justify-content-between align-items-center border-top border-cus-frame">
+                                    <div class="d-flex align-items-center">
+                                        <label class="checkbox-like me-3 d-flex align-items-center" style="cursor: pointer;">
+                                            <input type="checkbox" class="check-like" hidden value="1">
+                                            <i class="fa-solid font-15 fa-heart cus-icon cus-like color-cus-1"></i>&nbsp;<small>12</small>
+                                        </label>
+                                        <span class="d-flex align-items-center"><i class="fa-solid fa-comment cus-icon color-cus-1"></i>&nbsp;<small>12</small></span>
+                                    </div>
+                                    <small class="text-body-secondary">2024-01-01</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <nav aria-label="Page navigation example" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link " href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link " href="#">1</a></li>
+                      <li class="page-item "><a class="page-link" href="#">2</a></li>
+                      <li class="page-item "><a class="page-link" href="#">3</a></li>
+                      <li class="page-item ">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+        </section>
+    </main>
+
+    <footer class="text-body-secondary px-3 py-4 border-top bg-cus-background border-cus-frame ">
+        <div class="cus-container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Copyright &copy; </p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/gixi/gixi-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#avatar').gixi({
+                seed: 'foo1990'
+            })
+            $('.avatar').gixi()
+            $(".checkbox-like").on("click", function() {
+                var checkbox = $(this).children(".check-like");
+                if (checkbox.prop("checked") === true) {
+                    $(this).children(".cus-like").addClass("active")
+                } else {
+                    $(this).children(".cus-like").removeClass("active")
+                }
+            })
+        });
+    </script>
+</body>
+</html>

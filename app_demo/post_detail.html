@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#C0AE9E" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-utilities.min.css">
+    
+    <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/colors.css">
+</head>
+<body class="bg-cus-background min-vh-100 position-relative">    
+
+    <header>
+        <div class="navbar navbar-dark bg-cus-primary shadow-sm z-3">
+            <div class="cus-container container w-100 position-relative text-start justify-content-start justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                <a href="index.html" class="navbar-brand m-0 p-0">
+                    <strong class="fs-3">36CP</strong>
+                </a>
+                <div class="position-absolute end-0 me-3 d-flex justify-content-end align-items-center">
+                    <a href="#" class="text-center position-relative align-middle font-24 ms-4"><i class="fa-solid fa-heart color-cus-1"></i></a>
+                    <a href="#" class="text-center align-middle position-relative font-24 ms-4"><i class="fa-solid fa-bell color-cus-1"></i>
+                        <span class="icon-notif-badge translate-middle p-1 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </a>
+                    <a href="profile.html" id="avatar" class="gixiss me-3 ms-4" style="width: 32px;height: 32px;"></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav_offcanvas" aria-controls="nav_offcanvas" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end border-0 shadow bg-cus-offcanvas" tabindex="-1" id="nav_offcanvas" aria-labelledby="nav_offcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="nav_offcanvas">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="card border-cus-frame shadow-sm rounded bg-cus-background mb-3">
+                            <div class="px-3 mt-2">
+                                <h4 class="fst-italic">Recent posts</h4>
+                                <ul class="list-unstyled m-0">
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Example blog post title</h6>
+                                        <small class="text-body-secondary">January 15, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">This is another blog post title</h6>
+                                        <small class="text-body-secondary">January 14, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top border-cus-1" href="#">
+                                    
+                                    <div class="col-lg-8">
+                                        <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                                        <small class="text-body-secondary">January 13, 2023</small>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-cus-1 fw-600" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cus-container">
+        <section class="ps-4">
+            <div class="d-flex align-items-center mt-5 my-4 gap-2">
+                <span class="gixiss avatar me-1 cus-pd-author-avatar rounded-circle"></span>
+                <div class="d-flex flex-column">
+                    <label class="font-18 color-cus-1">一二三四五六七八九十一二三四五</label>
+                    <small class="font-14">2024-01-01</small>
+                </div>
+            </div>
+            <div class="d-flex flex-grow-1 align-items-center mb-4">
+                <span class="font-18 fw-bold color-cus-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+        </section>
+        <section class="cus-container container bg-white  w-100 rounded-top-4 shadow cus-main pt-4 pb-5 px-4 h-100">
+        <div class="color-cus-2 font-14 prevent-select">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula facilisis metus, ultrices egestas orci consequat eu. Donec euismod nisi nisl, vitae vehicula velit imperdiet eu. Vivamus egestas felis viverra turpis mollis aliquam. Nam placerat viverra turpis, nec sollicitudin augue feugiat nec. Quisque venenatis ipsum vitae eros malesuada pharetra. Donec bibendum viverra arcu ut scelerisque. Cras interdum massa libero, ut egestas dolor finibus vel. Mauris lectus ipsum, pulvinar in ultricies eget, efficitur ut risus. Fusce dignissim mauris placerat massa venenatis aliquet. Nam gravida urna eget massa elementum, et condimentum nisi volutpat. Pellentesque egestas suscipit massa ac dictum. Fusce accumsan lectus vitae erat viverra, in cursus urna porttitor. Suspendisse posuere turpis neque, a aliquet nunc tincidunt id. Maecenas in metus leo. Mauris condimentum, sem a bibendum consequat, velit tortor iaculis dui, a fermentum lectus lectus non nunc.
+            <br><br>
+            Mauris sed posuere nulla, ac sodales massa. Integer neque elit, ultricies eu tortor ut, ornare consequat ante. Mauris in turpis odio. Donec sapien purus, accumsan a urna quis, laoreet auctor felis. Suspendisse laoreet placerat arcu nec tristique. Aliquam dignissim egestas sagittis. Maecenas ut erat quis nisl euismod consequat id vel libero. Duis blandit efficitur nisi, et venenatis velit. Pellentesque fermentum mattis tortor quis facilisis. Proin est ligula, commodo suscipit volutpat et, mollis et elit. Donec luctus, libero ut dictum rutrum, diam nunc imperdiet urna, ut pulvinar diam ipsum vitae ipsum. Donec vel dui pretium, pretium libero id, pretium neque. Pellentesque consequat lacus eget arcu vulputate, eu laoreet quam vestibulum. Pellentesque consectetur tempus ex sed placerat.
+            <br><br>
+            In hac habitasse platea dictumst. Proin blandit leo purus, non euismod urna finibus nec. Nulla molestie orci viverra consectetur vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam volutpat, velit vitae porttitor iaculis, ante erat tempus justo, in tempor orci purus ut risus. Fusce commodo enim sed cursus sollicitudin. Vivamus at porta lacus, in auctor risus. Sed a massa lacus.
+            <br><br>
+            Sed consequat urna vitae nulla ullamcorper, et efficitur dolor tincidunt. Vivamus libero mauris, posuere a quam vel, ullamcorper pulvinar neque. Mauris sed felis vitae libero malesuada elementum eu eget purus. Sed sit amet commodo nisl, sed eleifend sapien. Integer id justo rhoncus, dictum magna vel, pellentesque eros. Mauris imperdiet luctus tortor eget condimentum. Sed euismod vehicula ante, quis rhoncus ante fermentum sit amet. Vivamus sit amet eros tempor, porttitor metus vitae, tempor mauris. Maecenas venenatis posuere sodales. Vestibulum massa nisi, gravida a tincidunt ut, pulvinar auctor orci. Maecenas tristique turpis in luctus gravida. Curabitur ut augue fermentum, lacinia lacus ut, gravida mi. Donec eget enim sit amet dolor porta ultrices in eu diam.
+            <br><br>
+            Fusce vel orci suscipit, posuere arcu sed, scelerisque erat. Sed scelerisque urna libero, a tristique leo egestas quis. Etiam luctus odio tortor, ac vulputate leo mollis vitae. Praesent pellentesque dui auctor justo sagittis vehicula. Aliquam eu felis lectus. In tincidunt, urna rutrum varius imperdiet, tellus ex pulvinar diam, ultrices rhoncus sem nunc a augue. Nulla vel hendrerit quam, ut porta libero. Vivamus viverra, urna nec pretium aliquam, mauris odio venenatis diam, ac imperdiet magna quam ut metus.
+            <br><br>
+            Nullam quis odio quis arcu eleifend molestie. Mauris mattis accumsan purus at sollicitudin. Donec lobortis sollicitudin leo, ut pellentesque dui commodo eget. Integer eget commodo quam. Phasellus ornare dui ipsum. Nulla suscipit nibh vitae volutpat cursus. Etiam aliquet velit eget eleifend tincidunt. Vestibulum augue ex, posuere non enim in, semper facilisis risus.
+            <br><br>
+            Nunc molestie elit ornare, varius arcu vel, euismod ligula. Mauris dictum sagittis mi, eget maximus elit sodales et. Donec in rhoncus orci. Nullam tempor est in venenatis tempus. Nam et libero laoreet massa efficitur facilisis. Mauris nec posuere nulla. Nullam pretium fringilla diam sit amet varius. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi odio nisi, fringilla at arcu ut, ultricies lobortis nibh. Vestibulum fermentum diam sed urna venenatis, viverra facilisis mauris commodo.
+            <br><br>
+            Proin at tellus in elit accumsan tempor sed at tortor. Maecenas vel maximus sapien. Curabitur pellentesque aliquet enim sit amet venenatis. Vestibulum malesuada ipsum erat, eu egestas nisi aliquet eget. Cras ut neque ut purus gravida lobortis. Sed eu varius urna. Vivamus auctor in urna in fringilla.
+            <br><br>
+            Nullam at sem id leo venenatis eleifend eget vitae est. Maecenas accumsan urna nisl, in feugiat mauris molestie et. Etiam bibendum mauris nec facilisis consectetur. Nulla mollis, massa semper hendrerit commodo, mauris felis faucibus urna, a placerat ipsum urna sit amet magna. Praesent mollis lorem nec suscipit mattis. Ut blandit, elit dapibus consequat hendrerit, ligula est luctus orci, non sagittis purus nunc ut augue. Suspendisse tellus nunc, egestas in libero at, dapibus laoreet ex. Sed tincidunt tristique eros, elementum maximus quam posuere eu. Aliquam mi eros, hendrerit posuere tempus quis, rutrum id risus.
+            <br><br>
+            Maecenas fermentum fringilla tortor sit amet elementum. Curabitur sit amet est vel magna consequat hendrerit. Vestibulum a ex justo. Etiam ac nulla egestas, sollicitudin dolor iaculis, consequat arcu. Nam interdum metus erat, at porta massa sollicitudin in. Aliquam quis dui in justo blandit aliquam at et risus. Ut sed eleifend enim. Mauris tempus tortor ac nulla tempor, vitae dignissim felis viverra. Aenean a interdum est. 
+        </div>
+        <div class="mt-5">
+            <div class="d-flex flex-wrap grid gap-1">
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+                <span class="badge cus-badge-tag">Tag</span>
+            </div>
+
+            <hr>
+            <div class="d-flex gap-3">
+                <div class="d-flex">
+                    <label class="checkbox-like d-flex align-items-center" style="cursor: pointer;">
+                        <input type="checkbox" class="check-like" hidden value="1">
+                        <i class="fa-solid font-22 fa-heart cus-icon cus-like color-cus-1"></i>
+                    </label>&nbsp;<small class="pointer-event font-16">12</small>
+                </div>
+                <span class="d-flex align-items-center"><i class="fa-solid fa-comment font-22 cus-icon color-cus-1"></i>&nbsp;<small class="font-16">12</small></span>
+            </div>
+            <div class="font-18 mt-3">Comments</div>
+            <div class="d-flex align-items-center my-3 gap-2 w-100">
+                <span class="gixiss avatar align-self-start mt-1 cus-comment-avatar rounded-circle"></span>
+                <div class="w-100">
+                    <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Add a comment.."></textarea>
+                    <div class="d-grid mt-3">
+                        <button class="btn btn-cus-1 fw-600" id="btn_comment" type="button">Comment</button>
+                    </div>
+                </div>
+            </div>
+            <div id="comment_section" class=" mt-5">
+                <div class="d-flex align-items-center my-3 gap-2 w-100 pt-2 cus-post-comment">
+                    <input type="hidden" id="comment_row_reply" value="0">
+                    <span class="gixiss avatar align-self-start mt-1 cus-comment-avatar rounded-circle"></span>
+                    <div class="flex-grow-1 flex-shrink-1">
+                        <div class="d-flex flex-column">
+                            <div class="mb-2 d-flex flex-column">
+                                <strong class="d-inline-block text-success-emphasis font-16"> 一二三四五六七八九十一二三四五</strong>
+                                <em class="text-secondary font-12">2024-01-01</em>
+                            </div>
+                            <p class="m-0 font-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula facilisis metus, ultrices egestas orci consequat eu. Donec euismod nisi nisl, vitae vehicula velit imperdiet eu.</p>
+                            <div class="mt-3 d-flex">
+                                <small class="text-secondary">Reply</small>
+                            </div>
+                        </div>
+                        <div class="cus-child-comment">
+                            <div class="d-flex align-items-center my-3 gap-2 w-100 pt-2 cus-post-comment">
+                                <span class="gixiss avatar align-self-start mt-1 cus-comment-avatar rounded-circle"></span>
+                                <div class="flex-grow-1 flex-shrink-1">
+                                    <div class="d-flex flex-column">
+                                        <div class="mb-2 d-flex flex-column">
+                                            <strong class="d-inline-block text-success-emphasis font-16"> 一二三四五六七八九十一二三四五</strong>
+                                            <em class="text-secondary font-12">2024-01-01</em>
+                                        </div>
+                                        <p class="m-0 font-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula facilisis metus, ultrices egestas orci consequat eu. Donec euismod nisi nisl, vitae vehicula velit imperdiet eu.</p>
+                                        <div class="mt-3 d-flex">
+                                            <small class="text-secondary">Reply</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <input type="hidden" id="comment_row" value="0">
+        </div>
+        </section>
+    </main>
+
+
+    <div style="bottom: 0;height: 50px;" class="prevent-select position-fixed shadow-lg w-100 bg-white border-top border-cus-frame">
+        <div class="cus-container px-3 d-flex justify-content-end align-items-center h-100 w-100 gap-4">
+            <div class="d-flex">
+                <label class="checkbox-like d-flex align-items-center" style="cursor: pointer;">
+                    <input type="checkbox" class="check-like" hidden value="1">
+                    <i class="fa-solid font-22 fa-heart cus-icon cus-like color-cus-1"></i>
+                </label>
+            </div>
+            <span class="d-flex align-items-center"><a id="to_comment" class="text-decoration-none" href="javascript:;"><i class="fa-solid fa-comment font-22 cus-icon color-cus-1"></i></a>
+        </div>
+    </div>
+
+    <footer class="text-body-secondary px-3 py-4 border-top bg-cus-background border-cus-frame ">
+        <div class="cus-container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Copyright &copy; </p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/gixi/gixi-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#avatar').gixi({
+                seed: 'foo1990'
+            });
+            $('.avatar').gixi();
+            $(".checkbox-like").on("click", function() {
+                var checkbox = $(this).children(".check-like");
+                if (checkbox.prop("checked") === true) {
+                    $(this).children(".cus-like").addClass("active")
+                } else {
+                    $(this).children(".cus-like").removeClass("active")
+                }
+            });
+            $("#btn_comment").on("click", function() {
+                comment_post();
+            });
+
+            
+            $("#to_comment").click(function (){
+                $('html').animate({
+                    scrollTop: $("#comment").offset().top
+                }, 1000);
+                $( "#comment" ).trigger( "focus" );
+            });
+
+
+        });
+
+        function comment_post() {
+            var comment_row = parseInt($("#comment_row").val());
+            comment_row++;
+            var comment = $.trim($("#comment").val());
+
+            var html = '';
+            if (comment !== "") {
+
+                html = '<div id="post_comment_'+comment_row+'" class="d-flex align-items-center my-3 gap-2 w-100 pt-2 cus-post-comment">'+
+                                '<input type="hidden" id="comment_row_reply" value="0">'+
+                                '<span class="gixiss avatar align-self-start mt-1 cus-comment-avatar rounded-circle"></span>'+
+                                '<div class="flex-grow-1 flex-shrink-1">'+
+                                    '<div class="d-flex flex-column">'+
+                                        '<div class="mb-2 d-flex flex-column">'+
+                                            '<strong class="d-inline-block text-success-emphasis font-16"> 一二三四五六七八九十一二三四五</strong>'+
+                                            '<em class="text-secondary font-12">Just now</em>'+
+                                        '</div>'+
+                                        '<p style="white-space: pre-wrap;" class="m-0 font-14">'+comment+'</p>'+
+                                        '<div class="mt-3 d-flex">'+
+                                            '<small class="text-secondary font-12">Reply</small>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div id="post_comment_reply_'+comment_row+'" class="cus-child-comment">'+
+                                        
+                                    '</div>'+
+                                '</div>'+
+                            '</div>';
+
+                $("#comment_section").prepend(html);
+                $("#comment_row").val(comment_row);
+                $("#comment").val("")
+            }
+        }
+        function reply_comment_post(comment_row) {
+            //post_comment_reply_
+
+            var html = '';
+            html = '<div class="d-flex align-items-center my-3 gap-2 w-100 pt-2 cus-post-comment">'+
+                                '<span class="gixiss avatar align-self-start mt-1 cus-comment-avatar rounded-circle"></span>'+
+                                '<div class="flex-grow-1 flex-shrink-1">'+
+                                    '<div class="d-flex flex-column">'+
+                                        '<div class="mb-2 d-flex flex-column">'+
+                                            '<strong class="d-inline-block text-success-emphasis font-16"> 一二三四五六七八九十一二三四五</strong>'+
+                                '<em class="text-secondary font-12">Just now</em>'+
+                                        '</div>'+
+                                        '<p style="white-space: pre-wrap;" class="m-0 font-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula facilisis metus, ultrices egestas orci consequat eu. Donec euismod nisi nisl, vitae vehicula velit imperdiet eu.</p>'+
+                                        '<div class="mt-3 d-flex">'+
+                                            '<small class="text-secondary">Reply</small>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>';
+                            
+                $("#post_comment_reply_"+comment_row).append(html)
+        }
+
+    </script>
+</body>
+</html>
